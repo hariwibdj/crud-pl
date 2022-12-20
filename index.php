@@ -9,6 +9,7 @@
   <body>
    <div class="container">
     <h1>Daftar User</h1>
+    <h2> <a href="add.php" class="btn btn-primary" > Add New User</a> </h2>
     <table class="table table-hover">
 
         <thead>
@@ -16,7 +17,8 @@
                 <th>No</th>
                 <th>Name</th>
                 <th>Mobile</th>
-                <th>email</th>
+                <th>Email</th>
+                <th>Action</th>
             </tr>
         </thead>
                 <?php
@@ -30,6 +32,10 @@
                 <td><?=$user_data['name'];?></td>
                 <td><?=$user_data['mobile'];?></td>
                 <td><?=$user_data['email'];?></td>
+                <td> 
+                    <a href="update.php?id=<?=$user_data['id'];?>" class="btn btn-warning">Edite Data</a>  
+                    <a href="delete.php?id=<?=$user_data['id'];?>" class="btn btn-danger">Delete Data</a> 
+                </td>
             </tr>
         </tbody>
                 <?php
