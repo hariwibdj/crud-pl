@@ -4,6 +4,6 @@
     $databasepwd  = "";
     $databasename ="dbpl";
 
-    $mysql = mysqli_connect($databasehost,$databaseuser,$databasepwd,$databasename);
+    $mysqli = mysqli_connect($databasehost,$databaseuser,$databasepwd,$databasename);
 
 ?>
